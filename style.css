@@ -414,38 +414,35 @@ h2 {
 
 /* ========== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ ========== */
 @media (max-width: 768px) {
-    /* Бургер-меню */
+    /* Навбар — только ссылки, логотип скрыт */
+    .navbar {
+        padding: 0.5rem;
+    }
+    .nav-container {
+        justify-content: center;
+    }
+    .logo {
+        display: none;
+    }
     .burger {
-        display: block;
+        display: none;
     }
     .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(0,0,0,0.95);
-        padding: 0;
-        gap: 0;
-        border-radius: 0 0 12px 12px;
-    }
-    .nav-links.active {
         display: flex;
-    }
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
     }
     .nav-links a {
-        padding: 1rem;
-        display: block;
-        font-size: 1.1rem;
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+        white-space: nowrap;
     }
 
     /* Общие */
-    .about, .services, .benefits, .gallery, .testimonials, .contacts {
+    .about, .services, .benefits, .gallery, .contacts {
         padding: 2rem 1rem;
     }
     h2 {
@@ -494,8 +491,6 @@ h2 {
         display: flex;
         flex-direction: row;
         align-items: stretch;
-        border-radius: 12px;
-        overflow: hidden;
     }
     .card-img {
         width: 40%;
@@ -510,27 +505,20 @@ h2 {
     .card-body {
         width: 60%;
         padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
     .card-body h3 {
         font-size: 0.95rem;
-        margin-bottom: 0.3rem;
     }
     .card-body p {
         font-size: 0.85rem;
-        margin-bottom: 0.5rem;
     }
     .price {
         font-size: 1rem;
-        margin-top: auto;
     }
 
     /* Преимущества */
     .benefits ul {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.8rem;
     }
     .benefits li {
         font-size: 0.9rem;
@@ -540,21 +528,12 @@ h2 {
     /* Галерея */
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
     }
     .gallery-grid img {
         height: 150px;
     }
     .video-container iframe {
         height: 200px;
-    }
-
-    /* Отзывы */
-    .testimonial-cards {
-        flex-direction: column;
-    }
-    .testimonial {
-        flex: 1 1 100%;
     }
 
     /* Контакты */
@@ -565,23 +544,34 @@ h2 {
     .btn-footer-sub {
         width: 90%;
         text-align: center;
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
     }
 }
-
 /* ========== АДАПТАЦИЯ ДЛЯ МАЛЕНЬКИХ ТЕЛЕФОНОВ ========== */
 @media (max-width: 480px) {
+    /* Навбар */
+    .navbar {
+        padding: 0.4rem;
+    }
+    .nav-links {
+        gap: 0.2rem;
+    }
+    .nav-links a {
+        font-size: 0.65rem;
+        padding: 0.3rem 0.4rem;
+    }
+
+    /* Первый экран */
     .hero {
         height: 70vh;
     }
     .hero-overlay h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .hero-overlay p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
+    /* Услуги — вертикально */
     .card {
         flex-direction: column;
     }
@@ -600,15 +590,28 @@ h2 {
         font-size: 0.9rem;
     }
 
+    /* Преимущества */
     .benefits ul {
         grid-template-columns: 1fr;
     }
 
+    /* Галерея */
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 0.4rem;
+        gap: 0.3rem;
     }
     .gallery-grid img {
-        height: 130px;
+        height: 120px;
+    }
+
+    /* Кнопки */
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    .btn-footer-main,
+    .btn-footer-sub {
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
     }
 }
