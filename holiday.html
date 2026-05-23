@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Аренда территории под праздники</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/фон7.jpg') center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .service-hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); }
+        .service-content { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+        .service-gallery { display: flex; gap: 0.5rem; overflow-x: auto; scroll-snap-type: x mandatory; padding: 1rem; max-width: 800px; margin: 0 auto; }
+        .service-gallery img { width: 100%; max-width: 400px; height: 300px; object-fit: cover; border-radius: 12px; scroll-snap-align: start; flex-shrink: 0; }
+        .back-btn { display: inline-block; margin: 2rem; padding: 0.8rem 2rem; background: #E89B4A; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
+        .back-btn:hover { background: #d4893a; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Сплавы -"Веревочный парк" база отдыха</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#services">Услуги</a></li>
+                <li><a href="index.html#gallery">Галерея</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="service-hero">
+        <h1>🎉 Аренда территории под праздники</h1>
+    </div>
+
+    <div class="service-content">
+        <h2>Описание</h2>
+        <p>Для празднования знаменательных событий предлагаем в аренду большую территорию с уютной беседкой, мангалом, коптильней. <br>
+             Так же на территории имеется новая баня, которую так же можно арендовать почасово. <br> Жар обеспечен 🔥🔥🔥<br> Помимо этого есть качели, батут, и, конечно же, верёвочный парк. <br>
+              Оборудовано место для волейбола, можно поиграть в лазертаг. Для каждого найдется свое развлечение 🥳</p> <br>
+        <p class="price" style="font-size: 1.5rem; color: #E89B4A; font-weight: bold;"> По договорённости</p>
+    </div>
+
+    <h2 style="text-align: center;">Фотографии</h2>
+    <div class="service-gallery">
+        <img src="images/П10.jpg" alt="Праздник 1">
+        <img src="images/П1.jpg" alt="Праздник 2">
+        <img src="images/П12.jpg" alt="Праздник 3">
+        <img src="images/П3.jpg" alt="Праздник 4">
+        <img src="images/П4.jpg" alt="Праздник 5">
+        <img src="images/П6.jpg" alt="Праздник 6">
+        <img src="images/П16.jpg" alt="Праздник 7">
+        <img src="images/П17.jpg" alt="Праздник 8">
+        <img src="images/П7.jpg" alt="Праздник 9">
+        <img src="images/П8.jpg" alt="Праздник 10">
+        <img src="images/П9.jpg" alt="Праздник 11">
+        <img src="images/П11.jpg" alt="Праздник 12">
+        <img src="images/П13.jpg" alt="Праздник 13">
+        <img src="images/П14.jpg" alt="Праздник 14">
+        <img src="images/П15.jpg" alt="Праздник 15">
+        </div>
+
+    <div style="text-align: center;">
+        <a href="index.html" class="back-btn">← Назад</a>
+    </div>
+
+    <footer class="contacts" id="contacts">
+    <h2>Как добраться и забронировать</h2>
+    <p>📍Новгородская обл., Боровичский район, д. Ровное первая линия, д. 2а. - 10 км от города, проезд через д. Егла. </p>
+    <p>📞 <a href="tel:+79218416881"> +7 (921) 841-68-81 (Вячеслав). </a></p><br>
+    <p>📞 <a href="tel:+79116141712"> +7 (911) 614-17-12 (Наталья). </a></p><br>
+
+   
+    <p>🕐 Работаем пн.-пт. 
+По заявке, сб.-вс. с 9 ч. до 20 ч. <br> Желательно заранее позвонить. </p>
+
+    <!-- Кнопка в сообщения ВК -->
+    <a href="https://vk.com/parkborovichi" target="_blank" class="btn btn-primary">
+        💬 Напишите или позвоните нам 
+    </a>
+
+    <!-- Мы ВКонтакте -->
+    <div class="vk-footer">
+        <p>Мы ВКонтакте</p>
+        <p class="vk-subtitle">Подпишитесь, чтобы следить за новостями и акциями</p>
+        <a href="https://vk.com/parkborovichi" target="_blank" class="btn btn-accent">
+            ⭐ Подпишитесь на нас
+        </a>
+    </div>
+
+    <p class="copy">© 2026 база отдыха в Боровичах — активный отдых на природе</p>
+</footer>
+</body>
+</html>

@@ -395,6 +395,9 @@ h2 {
     .card {
         flex: 1 1 220px;
     }
+    .card-img {
+        height: 180px;
+    }
     .card-body h3 {
         font-size: 1rem;
     }
@@ -410,11 +413,27 @@ h2 {
     .gallery-grid img {
         height: 200px;
     }
+    
+    /* Страницы услуг */
+    .service-hero {
+        height: 40vh;
+    }
+    .service-hero h1 {
+        font-size: 2rem;
+    }
+    .service-gallery {
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .service-gallery img {
+        max-width: 350px;
+        height: 260px;
+    }
 }
 
 /* ========== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ ========== */
 @media (max-width: 768px) {
-    /* Навбар — только ссылки, логотип скрыт */
+    /* Навбар */
     .navbar {
         padding: 0.5rem;
     }
@@ -496,6 +515,7 @@ h2 {
         width: 40%;
         min-width: 120px;
         flex-shrink: 0;
+        height: auto;
     }
     .card-img img {
         width: 100%;
@@ -545,7 +565,39 @@ h2 {
         width: 90%;
         text-align: center;
     }
+
+    /* Страницы услуг */
+    .service-hero {
+        height: 35vh;
+    }
+    .service-hero h1 {
+        font-size: 1.6rem;
+        padding: 0 1rem;
+    }
+    .service-content {
+        padding: 0 1rem;
+    }
+    .service-content h2 {
+        font-size: 1.4rem;
+    }
+    .service-content p {
+        font-size: 0.95rem;
+    }
+    .service-gallery {
+        gap: 0.8rem;
+        padding: 0.8rem;
+    }
+    .service-gallery img {
+        max-width: 300px;
+        height: 220px;
+    }
+    .back-btn {
+        margin: 1.5rem;
+        padding: 0.7rem 1.5rem;
+        font-size: 0.95rem;
+    }
 }
+
 /* ========== АДАПТАЦИЯ ДЛЯ МАЛЕНЬКИХ ТЕЛЕФОНОВ ========== */
 @media (max-width: 480px) {
     /* Навбар */
@@ -571,7 +623,7 @@ h2 {
         font-size: 0.85rem;
     }
 
-    /* Услуги — вертикально */
+    /* Услуги */
     .card {
         flex-direction: column;
     }
@@ -613,5 +665,26 @@ h2 {
     .btn-footer-sub {
         font-size: 0.9rem;
         padding: 0.7rem 1rem;
+    }
+
+    /* Страницы услуг */
+    .service-hero {
+        height: 30vh;
+    }
+    .service-hero h1 {
+        font-size: 1.3rem;
+    }
+    .service-gallery {
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    .service-gallery img {
+        max-width: 260px;
+        height: 180px;
+    }
+    .back-btn {
+        margin: 1rem;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
